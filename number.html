@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="number.js"></script>
+    <style>
+      .header {
+        /* border: 1px solid black; */
+        text-align: center;
+        margin: auto 25%;
+      }
+
+      #textmessage {
+        width: 50%;
+        height: 5vh;
+        margin: 5% auto;
+        padding-top: 1%;
+        display: inline-block;
+      }
+
+      #rest {
+        margin: 0% auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div>
+        <h2>Number Guessing Game</h2>
+        <h4>
+          Guess the number within 10 Chances. The number is in between 1 - 100
+        </h4>
+      </div>
+      <div>
+        Guess the Answer =
+        <input type="number" id="values" />
+        <button class="btn submit" onclick="generateValue()">Submit</button>
+      </div>
+      <br />
+      Previous value :<span id="display"></span>
+      <br />
+      <div class="contentbox">
+        <div id="textmessage"></div>
+        <br />
+        <form>
+          <button id="rest" type="submit" style="display: none">
+            START NEW GAME
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
